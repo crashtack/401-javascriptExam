@@ -1,0 +1,25 @@
+question 2:
+answer D: divideDemo(12,4);
+
+question 3: Not valid way to set up a function
+  A. function{a,b} ()
+  C. var myFunction = method(alpha, beta) {}
+
+In the MVC (Model View Controller) design pattern, what is the function of the "model"?
+  picke the answer about JSON
+
+Which of the following statements are true about the MVC architecture pattern?
+
+  A. In order to make AJAX calls we must implement our web application with MVC architecture
+
+  B. Single page web applications cannot exist without MVC architecture pattern
+
+  C. In MVC architecture, controller code is responsible for routing incoming requests to different components of the system
+
+  D. With proper MVC architecture, there has to be a dedicated controller for every unique view
+
+  E. Views in an MVC based application can show portions of different models
+
+  C & E
+
+  fdfd
