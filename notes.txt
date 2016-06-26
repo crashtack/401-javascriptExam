@@ -120,3 +120,36 @@ Which of the following functions assigns event handler functions to an array of 
       }
     };
  ----->>>>> correct
+
+In order to modify
+
+  <div id="message"><p>Your current balance is <b>$1000</b></p></div>
+
+  to
+
+  <div id="message"><p>Your current balance is <b>$2000</b></p></div>
+
+  you will execute will of the following jQuery code statements?
+
+  jQuery('#message').find('b').html('$2000');
+
+  ---->>>> Correct
+
+Consider the following two JavaScript snippets using jQuery:
+
+  var $divElement = $('div:eq(1)');
+
+  var $otherDivElement = $('div').first();
+
+  Statement 1 applies a filter to the selected list of div elements whereas statement 2 calls a method on the selected list of div elements
+
+  ---->>>> Correct
+
+Consider the following JavaScript code and then select the best statement that describes the code
+
+  jQuery('<img>', {   src: 'images/little_book.jpg',   alt: 'New Book',   title: 'This is a good book to read' });
+
+  The code once executed will only create an image element but will leave the DOM unmodified
+
+  ---->>>> Correct
+  

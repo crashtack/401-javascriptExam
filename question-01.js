@@ -17,3 +17,11 @@ var divideDemo = function (number, divisor) {
   var val = number / divisor;
   console.log(val);
 };
+
+var qQueryFunction1 = function () {
+  jQuery('<img>', {
+    src: 'Screenshot from 2016-06-25 19:37:45.png',
+    alt: 'New Book',
+    title: 'This is a good book to read'
+  });
+};
