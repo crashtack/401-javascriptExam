@@ -1,12 +1,13 @@
 question 2:
-answer D: divideDemo(12,4);
+answer D: divideDemo(12,4);  ----->>>> Correct
 
 question 3: Not valid way to set up a function
   A. function{a,b} ()
   C. var myFunction = method(alpha, beta) {}
+  ----->>>>> Correct
 
 In the MVC (Model View Controller) design pattern, what is the function of the "model"?
-  picke the answer about JSON
+  picke the answer about JSON ---->>>> Incorrect
 
 Which of the following statements are true about the MVC architecture pattern?
 
@@ -20,6 +21,57 @@ Which of the following statements are true about the MVC architecture pattern?
 
   E. Views in an MVC based application can show portions of different models
 
-  C & E
+  C & E --->>> Correct
 
-  fdfd
+
+Which of the following statements best describes 'git merge' command?
+
+  A. The merge command is one way to combine commits from two different branches
+
+  B. The merge command works the same way as pull command
+
+  C. The merge command sometimes results in code conflicts
+
+  D. When on master, "git merge other_branch" will bring over all the changes made on "other_branch", that are not already on master
+
+  answered A, B, C & D ---->> Incorrect
+
+Sunday Morning---------------------------------------
+SQL Joins:
+
+Consider two tables, BACTERIA and BACTERIA_CLASSES
+
+BACTERIA has the following columns:
+- id
+- bacteria_class_id (this is foreign key)
+- name
+- origin
+- research_notes
+
+BACTERIA_CLASSES has the following attributes
+- id
+- description
+
+BACTERIA_CLASSES and BACTERIA have 1:N relationship. The relationship is specified by foreign key 'bacteria_class_id' inside the BACTERIA table. In order to find 'name', 'origin' & 'description' for all the bacteria in your database, you will run which of the following query?
+
+  SELECT name, origin, description
+  FROM bacteria
+  INNER JOIN bacteria_classes
+    ON bacteria.bacteria_class_id = bacteria_classes.id
+  ORDER BY id ASC;
+
+  SELECT name, origin, description FROM BACTERIA, BACTERIA_CLASSES WHERE BACTERIA_CLASSES.id = BACTERIA.bacteria_class_id
+-------------------------------------------------------------
+SQL Operations
+
+Which of the following SQL statement is used to remove the user from table 'users' with the latest 'registered_on' timestamp?
+
+  DELETE FROM users ORDER BY registered_on DESC LIMIT 1;
+  ------->>>>>> Correct!
+
+Which of the following SQL statement is used to change "301" into "401" in the 'status' column in the users table?
+
+    UPDATE users SET status='401' WHERE status='301'
+    ----->>>> Correct
+
+    
