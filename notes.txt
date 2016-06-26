@@ -74,4 +74,49 @@ Which of the following SQL statement is used to change "301" into "401" in the '
     UPDATE users SET status='401' WHERE status='301'
     ----->>>> Correct
 
-    
+----------------------------------------------------------
+Javascript JSON
+
+Which of the following is valid JSON?
+  [{"string": true}]  ---->>>> Correct
+
+-----------------------------------------------------------
+CSS Media Queries
+
+Consider the following media queries:
+
+  @media screen and (min-width: 320px) {   body {     background-color: green;   } }
+
+  @media screen and (min-width: 550px) {   body {     background-color: yellow;   } }
+
+  @media screen and (min-width: 768px) {   body {     background-color: orange;   } }
+
+  @media screen and (min-width: 960px) {   body {     background-color: red;   } }
+
+  Which of the following statement best describes a web page that uses the media queries listed above?
+
+  yellow if greater the 767 but less then 960 ------>>>> correct
+
+------------------------------------------------------------
+Javascript JQuery Events
+
+Which of the following JavaScript statements will modify the src of an image element when it's clicked?. You can assume the following image tag is a valid DOM element: <img id="my_img" src="text_image.jpg">
+
+    jQuery('img#my_img').on('click', function(){   $(this).src('new_text_image.jpg'); });
+
+    ------>>>>> incorrect
+
+Which of the following functions assigns event handler functions to an array of nodes, so that when you click on a node, an alert box displays the ordinal of the node?
+
+    var my_handlers = function (nodes) {
+      var helper = function (i) {
+        return function (e) {
+          alert(i);
+        };
+      };
+      var x;
+      for (x = 0; x < nodes.length; x++) {
+        jQuery(nodes[x]).on(‘click’, helper(x));
+      }
+    };
+ ----->>>>> correct
