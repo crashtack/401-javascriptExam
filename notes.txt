@@ -41,8 +41,26 @@ You have been instructed to write some code that:
 
 Which of the following options below would successfully accomplish both of these tasks? Assume that you are allowed to use jQuery.
 
+  $.getJSON("/books", function(data) {
+    data.books.forEach(function (book) {
+      var endpoint = "/book/" + book.id;
+      if (book.author == "Lewis Carroll") {
+        $.ajax({ url: endpoint, type: "DELETE" });
+      } else if (book.author == "Terry Pratchett") {
+        var request = {title: book.title.toUpperCase(), author: book.author};
+        $.ajax({
+          url: endpoint,
+          type: "PUT",
+          data: JSON.stringify(request),
+          contentType: "application/json"
+        });
+      }
+    });
+  });
 
+  C = false, dosen't work because of the $.getJSON is not async
 
+  ---->>>> Correctt
 --------------------------------------------------------
 
 In the MVC (Model View Controller) design pattern, what is the function of the "model"?
