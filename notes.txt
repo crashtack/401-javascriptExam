@@ -6,6 +6,45 @@ question 3: Not valid way to set up a function
   C. var myFunction = method(alpha, beta) {}
   ----->>>>> Correct
 
+---------------------------------------------------------
+Javascript Rest Web Services
+
+Imagine that you are trying to write a client-side webapp that interacts with the following RESTFUL API that represents an online book catalog:
+
+GET /books - Returns a list of all books in the catalog
+Example response:
+{"books": [     {"id": 1, "title": "Alice in Wonderland", "author": "Lewis Carroll"},     {"id": 2, "title": "Hitchhiker's Guide to the Galaxy", "author": "Douglas Adams"} ]}
+
+
+POST /books - Creates a new book based on the given info
+Example request:
+{"title": "Mort", "author": "Terry Pratchett"}
+Example response:
+{"id": 3}
+
+
+GET /books/<id> - Returns info about the book with that id
+Example response:
+{"id": 1, "title": "Alice in Wonderland", "author": "Lewis Carroll"}
+
+PUT /books/<id> - Overrides info about the book with the given id with the new data
+Example request:
+{"title": "Mort", "author": "Terry Pratchett"}
+
+
+DELETE /books/<id> - Deletes the book at the given id. The id may be recycled for other books
+
+
+You have been instructed to write some code that:
+1. Deletes all books written by Lewis Carroll
+2. Modifies the titles of all books written by Terry Pratchett to all-caps
+
+Which of the following options below would successfully accomplish both of these tasks? Assume that you are allowed to use jQuery.
+
+
+
+--------------------------------------------------------
+
 In the MVC (Model View Controller) design pattern, what is the function of the "model"?
   picke the answer about JSON ---->>>> Incorrect
 
@@ -152,4 +191,68 @@ Consider the following JavaScript code and then select the best statement that d
   The code once executed will only create an image element but will leave the DOM unmodified
 
   ---->>>> Correct
-  
+
+What is the value of variable myElement after executing the following code?
+
+  var myElement = jQuery('img[alt]').get(-1);
+
+  myElement is a valid DOM element and can be converted to a jQuery object
+
+  ---->>>> correct
+
+Consider the following HTML snippet
+
+  <ul id="menu">
+    <li id="link-1"><a href="/">Homepage</a></li>
+    <li id="link-2"><a href="/projects">Projects</a></li>
+    <li id="link-3"><a href="/blog">Blog</a></li>
+    <li id="link-4"><a href="/about">About</a></li>
+  </ul>
+
+  Which of the following jQuery code will get the ordinal index of list item (<li>) containing the link to the Blog
+
+  var index = $('#menu > li').index($('#link-3'));
+
+  ---->>>> correct
+
+-----------------------------------------------------------
+Javascript Local Storage
+
+In modern browsers, localStorage data is stored in:
+
+  ---->>>> Incorrect form  Last Attempt: Sat, 28 May 2016
+
+Which of the following statements are true about local storage?
+
+  A. local storage data always stays in sync between server and client browser, making it available when user is offline
+
+  Ture B. local storage data is "per origin" (per domain and protocol)
+
+  False C. local storage data for "newValue" can be set by calling localStorage.setItem('newValue');
+
+  True D. local storage data for "newValue" can be removed by calling localStorage.removeItem('newValue');
+
+  B & D
+
+  ---->>>> Correct
+--------------------------------------------------------
+Css Fundamentals
+
+In order to make all images with CSS class 'person' scale with a fluid layout which of following CSS property must be added?
+
+  img.drawing {
+    max-width: 80%;
+  }
+
+  ---->>>> Correct!
+
+
+
+------------------------------------
+CSS Responsive Grid
+
+Which of the following is true about 960 Grid System (960GS)?
+
+  960GS provides a general guideline for conveniently laying out the content, either using 12 or 16 columns960GS provides a general guideline for conveniently laying out the content, either using 12 or 16 columns
+
+  ---->>>> Correct
